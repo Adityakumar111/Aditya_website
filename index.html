@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service | Mom's Meal.com</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" media="screen and (max-width: 1400px)" href="css/phone.css">
+    <link rel="stylesheet" href="<link href=" https://fonts.googleapis.com/css2?family=Anton&display=swap"
+        rel="stylesheet">">
+</head>
+<style>
+    /* CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+html{
+    scroll-behavior: smooth;
+}
+    /* CSS Variables  */
+    :root {
+        --navbar-height: 10px;
+    }
+
+    /*Navigation bar */
+    #navbar {
+        display: flex;
+    }
+
+    /* Navigation Bar: Logo and Image */
+    #logo {
+        margin: 25px 1px;
+    }
+
+    #logo img {
+        height: 80px;
+        margin: -20px 20px;
+        flex-direction: column;
+    }
+
+    /* navigation bar: List Styling */
+    #navbar {
+        position: sticky;
+        top: 0px;
+        display: flex;
+    }
+
+    #navbar ul {
+        display: flex;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    /*Home Section */
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 100px;
+        height: 340px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home::before {
+        content: "";
+        background: url(bck-grnd.img-f.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 570px;
+        width: 100%;
+        z-index: -1;
+        opacity: 10;
+    }
+
+    #home h1 {
+        color: white;
+        text-align: center;
+        font-size: 4.5rem;
+        font-family: 'Anton', sans-serif;
+
+
+    }
+  
+    #home p {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    /* Services Section */
+    #services {
+        margin: 10px;
+        display: flex;
+
+    }
+
+    #services .box {
+        border: 2px solid black;
+        padding: 5px;
+        margin: 5px 6px;
+        border-radius: 28px;
+        background-color: rgb(235, 232, 232);
+        margin-bottom: 20px;
+
+    }
+
+    #services .box img {
+        height: 150px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        font-family: 'Dancing Script', cursive;
+    }
+
+
+    /*  Utility Classes */
+    .h-primary {
+        font-size: 4.8rem;
+        padding: 90px;
+        font-family: 'Dancing Script', cursive;
+
+    }
+
+    .h-secondary {
+        font-size: 2.4rem;
+        padding: 12px;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: red;
+        color: white;
+        margin: 18px;
+        font-size: 1.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    /* Client Section */
+
+    #client-section {
+        height: 3px;
+
+
+    }
+
+    #client-section::before {
+        content: "";
+        position: absolute;
+        background: url('../bck-grnd.img-1.jpg');
+        width: 100%;
+        height: 80%;
+        z-index: -1;
+        opacity: 0.6;
+
+
+    }
+
+
+    #clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .client-item {
+        padding: 34px;
+
+    }
+
+    #clients img {
+        height: 130px;
+        width: 80px;
+        
+    }
+    /* contact section */
+    #contact{
+        position: relative;
+    padding: 400px;
+
+    
+    }
+    #contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        z-index: 1;
+        opacity: 0.4;
+
+     
+        
+    }
+    #contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 4px;
+    }
+    #contact-box input,
+    #contact-box textarea{
+        width: 100%;
+        padding:0.9rem;
+        border-radius: 40px;
+        font-size: 1.1rem;
+
+    }
+    #contact-box form{
+        width: 40%;
+    }
+    #contact-box label{
+        font-size: 1.5rem;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+    
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="main logo.png" alt="Mom's Meal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact ">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Mom's Meal</h1>
+       <p>GOOD FOOD...GOOD PEOPLE...GOOD TIMES</p>
+        <P>Enter With A Happy Heart May All Who Enter As Guest Leave As Friend </P>
+
+        
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="order-2.png" alt="">
+                <h2 class="h-secondary center">Food Order</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit nostrum
+                    quidem aliquam id dolores temporibus.</p>
+            </div>
+            <div class="box">
+                <img src="cattering.webp" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit nostrum
+                    quidem aliquam id dolores temporibus.</p>
+            </div>
+            <div class="box">
+                <img src="delivery.png" alt="">
+                <h2 class="h-secondary center">Food Delivery</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit nostrum
+                    quidem aliquam id dolores temporibus.</p>
+            </div>
+            <div class="box">
+                <img src="bulk.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Order</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit nostrum
+                    quidem aliquam id dolores temporibus.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo-apple.webp" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="bmw.webp" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="logo-microsoft.webp" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="logo-hp.jpg" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="amazon.webp" alt="Our Clients">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">ContactUs</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name"
+                    placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="name" id=email"
+                    placeholder="Enter your E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="text" name="name" id="phone"
+                    placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Name: </label>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+  
+    <footer>
+        <div class="center">
+            copyright &copy; www.Mom's Meal.com. All rights resreved!
+        </div>
+    </footer>
+  
+</body>
+
+</html>
